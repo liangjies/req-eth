@@ -78,6 +78,12 @@ type Client interface {
 
 	// IsBidirectional returns true if the under laying transport supports bidirectional features such as subscriptions
 	IsBidirectional() bool
+
+	// NewPendingTransactionFilter calls the eth_newPendingTransactionFilter JSON-RPC method
+	NewPendingTransactionFilter(ctx context.Context) (string, error)
+
+	// GetFilterChanges calls the eth_getFilterChanges JSON-RPC method
+	GetFilterChanges(ctx context.Context, filterID string) ([]string, error)
 }
 
 type Subscription interface {
