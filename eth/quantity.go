@@ -2,8 +2,8 @@ package eth
 
 import (
 	"encoding/hex"
-	"encoding/json"
 	"fmt"
+	"github.com/liangjies/req-eth/jsonrpc/json"
 	"math/big"
 	"strings"
 

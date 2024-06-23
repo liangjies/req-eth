@@ -3,7 +3,7 @@ package node
 import (
 	"bytes"
 	"context"
-	"encoding/json"
+	"github.com/liangjies/req-eth/jsonrpc/json"
 	"io/ioutil"
 	"net/http"
 	"net/url"

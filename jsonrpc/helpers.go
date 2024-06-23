@@ -1,7 +1,7 @@
 package jsonrpc
 
 import (
-	"encoding/json"
+	"github.com/liangjies/req-eth/jsonrpc/json"
 )
 
 func Unmarshal(data []byte) (interface{}, error) {

@@ -3,8 +3,8 @@ package node
 import (
 	"bytes"
 	"context"
-	"encoding/json"
 	"fmt"
+	"github.com/liangjies/req-eth/jsonrpc/json"
 	"log"
 	"math/rand"
 	"sync"

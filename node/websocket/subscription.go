@@ -4,7 +4,7 @@ package websocket
 
 import (
 	"context"
-	"encoding/json"
+	"github.com/liangjies/req-eth/jsonrpc/json"
 	"sync"
 
 	"github.com/pkg/errors"

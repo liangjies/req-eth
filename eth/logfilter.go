@@ -1,6 +1,6 @@
 package eth
 
-import "encoding/json"
+import "github.com/liangjies/req-eth/jsonrpc/json"
 
 type LogFilter struct {
 	FromBlock *BlockNumberOrTag `json:"fromBlock,omitempty"`

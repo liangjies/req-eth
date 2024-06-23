@@ -1,6 +1,6 @@
 package eth
 
-import "encoding/json"
+import "github.com/liangjies/req-eth/jsonrpc/json"
 
 type Uncle struct {
 	Number           *Quantity  `json:"number"`

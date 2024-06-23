@@ -1,9 +1,9 @@
 package eth
 
 import (
-	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/liangjies/req-eth/jsonrpc/json"
 	"strings"
 
 	"github.com/liangjies/req-eth/rlp"

@@ -2,7 +2,7 @@ package jsonrpc
 
 import (
 	"bytes"
-	"encoding/json"
+	"github.com/liangjies/req-eth/jsonrpc/json"
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"

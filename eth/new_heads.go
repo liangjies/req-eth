@@ -1,7 +1,7 @@
 package eth
 
 import (
-	"encoding/json"
+	"github.com/liangjies/req-eth/jsonrpc/json"
 	"strings"
 )
 

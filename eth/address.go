@@ -2,7 +2,7 @@ package eth
 
 import (
 	"encoding/hex"
-	"encoding/json"
+	"github.com/liangjies/req-eth/jsonrpc/json"
 	"strconv"
 	"strings"
 

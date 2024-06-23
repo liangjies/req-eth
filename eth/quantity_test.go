@@ -1,7 +1,7 @@
 package eth_test
 
 import (
-	"encoding/json"
+	"github.com/liangjies/req-eth/jsonrpc/json"
 	"math/big"
 	"sync"
 	"testing"

@@ -1,7 +1,7 @@
 package eth_test
 
 import (
-	"encoding/json"
+	"github.com/liangjies/req-eth/jsonrpc/json"
 	"testing"
 
 	"github.com/stretchr/testify/require"

@@ -10,7 +10,7 @@ package websocket
 import (
 	"bytes"
 	"context"
-	"encoding/json"
+	"github.com/liangjies/req-eth/jsonrpc/json"
 	"io/ioutil"
 	"log"
 	"math/rand"

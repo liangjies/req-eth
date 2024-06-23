@@ -2,7 +2,7 @@ package node
 
 import (
 	"context"
-	"encoding/json"
+	"github.com/liangjies/req-eth/jsonrpc/json"
 
 	"github.com/pkg/errors"
 
