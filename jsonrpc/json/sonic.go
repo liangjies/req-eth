@@ -8,7 +8,7 @@ import (
 )
 
 var (
-	json          = sonic.ConfigStd
+	json          = sonic.ConfigFastest
 	Marshal       = json.Marshal
 	Unmarshal     = json.Unmarshal
 	MarshalIndent = json.MarshalIndent
