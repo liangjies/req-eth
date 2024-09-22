@@ -1,15 +1,20 @@
-//go:build !jsoniter && !go_json && !(sonic && avx && (linux || windows || darwin) && amd64)
+//go:build !jsoniter && !(sonic && avx && (linux || windows || darwin) && amd64)
 
 package json
 
-import "encoding/json"
+import json "github.com/goccy/go-json"
 
 var (
-	Marshal       = json.Marshal
-	Unmarshal     = json.Unmarshal
+	// Marshal is exported by gin/json package.
+	Marshal = json.Marshal
+	// Unmarshal is exported by gin/json package.
+	Unmarshal = json.Unmarshal
+	// MarshalIndent is exported by gin/json package.
 	MarshalIndent = json.MarshalIndent
-	NewDecoder    = json.NewDecoder
-	NewEncoder    = json.NewEncoder
+	// NewDecoder is exported by gin/json package.
+	NewDecoder = json.NewDecoder
+	// NewEncoder is exported by gin/json package.
+	NewEncoder = json.NewEncoder
 )
 
 type RawMessage = json.RawMessage
