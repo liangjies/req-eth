@@ -1,20 +1,19 @@
-//go:build !jsoniter && !(sonic && avx && (linux || windows || darwin) && amd64)
+//go:build !jsoniter && !go_json
 
 package json
 
-import json "github.com/goccy/go-json"
-
-var (
-	// Marshal is exported by gin/json package.
-	Marshal = json.Marshal
-	// Unmarshal is exported by gin/json package.
-	Unmarshal = json.Unmarshal
-	// MarshalIndent is exported by gin/json package.
-	MarshalIndent = json.MarshalIndent
-	// NewDecoder is exported by gin/json package.
-	NewDecoder = json.NewDecoder
-	// NewEncoder is exported by gin/json package.
-	NewEncoder = json.NewEncoder
+import (
+	jsonStd "encoding/json"
+	"github.com/bytedance/sonic"
 )
 
-type RawMessage = json.RawMessage
+var (
+	json          = sonic.ConfigFastest
+	Marshal       = json.Marshal
+	Unmarshal     = json.Unmarshal
+	MarshalIndent = json.MarshalIndent
+	NewDecoder    = json.NewDecoder
+	NewEncoder    = json.NewEncoder
+)
+
+type RawMessage = jsonStd.RawMessage
